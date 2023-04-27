@@ -15,18 +15,27 @@ html{
 4. kiểu dáng (hình tròn, vuông, kiểu chữ )
 */
 
-.clear{
-    clear: both;
-}
+
 .white-color{
     color: #ccc !important;
 }
 .text-center{
     text-align: center !important;
 }
+.mgt-8px{
+    margin-top: 8px !important;
+}
+.mgt-16px{
+    margin-top: 16px !important;
+}
 .row{
     margin-left: -8px;
     margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 .col{
     float: left;
@@ -37,6 +46,9 @@ html{
 }
 .col-two{
     width: 50%;
+}
+.col-full{
+    width: 100%;
 }
 
 #header{
@@ -262,9 +274,6 @@ html{
 /*ticket-section-----*/
 /*end content------------------------------*/
 
-#footer{
-
-}
 
 /*------modal------*/
 .modal.open{
@@ -369,4 +378,66 @@ html{
     to{
         transform: translateY(0);
     }
+}
+
+/*CONTACT------*/
+.contact-content{
+    margin-top: 30px;
+    margin-bottom: 200px;font-size: 18px;
+}
+.contact-content .contact-information{
+    line-height: 27px;
+}
+.contact-information>p>i{
+    display: inline-block;
+    padding-right: 8px;
+}
+.contact-form{
+    font-size: 18px;
+}
+.contact-form .form-input{
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1px solid rgb(204, 204, 204);
+    width: 100%;
+}
+.contact-form .form-send{
+    float: right;
+    background: #000;
+    color: #fff;
+    padding: 10px 19px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+}
+.contact-form .form-send:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/*map-------*/
+
+.content-map .map-img{
+    width: 100%;
+}
+
+
+/*endddddddddddddd*/
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer>div {
+    margin: 15px 0px;
+}
+#footer .copyright,
+#footer .copyright a,
+.socal-icon a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .socal-icon a:hover,
+#footer .copyright a:hover{
+    color: rgba(0, 0, 0, 0.3);
 }
